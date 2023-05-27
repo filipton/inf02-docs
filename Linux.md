@@ -71,7 +71,13 @@ Np.. Jak chcemy dla wlasciciela pelne prawa(odczyt zapis wykonanie) grupy odczyt
 
 Tworzymy plik z rozszerzeniem .sh, np: `Plik_wsadowy.sh`
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/55f4db73-dde5-4d57-b936-dfe0e744f6ba)
+```bash
+#!/bin/bash
+
+jakies
+komendy
+tutaj
+```
 
 `echo cos_do_wyswietlenia` wyswietla cos do konsoli
 
@@ -101,7 +107,7 @@ else
   echo "Nie masz pliku .bashrc"
 fi
 ```
-![image](https://github.com/filipton/inf02-docs/assets/37213766/266c1337-a04d-4e1c-8e62-1f7e60eb54b9)
+![image](https://github.com/filipton/inf02-docs/assets/37213766/663bb4af-e3aa-4b73-a2ed-a014139be44c)
 
 ### For loop
 ```bash
@@ -235,11 +241,9 @@ Plik konfiguracyjny
 
 ### Przykładowa konfiguracja
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/df128674-159c-4091-8899-875353e0c311)
-
-![image](https://github.com/filipton/inf02-docs/assets/37213766/7d8d7077-c2c6-4e2c-a1de-0f60241eabde)
-
-![image](https://github.com/filipton/inf02-docs/assets/37213766/68aa2b99-5916-4d52-81cc-bc7b1688d693)
+![](https://github.com/filipton/inf02-docs/assets/37213766/221551c1-6668-47d4-a1c0-e9aee7a0a4c9)
+![](https://github.com/filipton/inf02-docs/assets/37213766/f2dbe1b1-f96e-4fda-949b-61bf98f8c48d)
+![](https://github.com/filipton/inf02-docs/assets/37213766/6db2aecc-61f9-4a18-ba5e-1ccd574a9951)
 
 **Po konfiguracji trzeba wpisac komende** `sudo netplan apply`
 
