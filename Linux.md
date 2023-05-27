@@ -1,254 +1,278 @@
-﻿# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
+# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
 
 ## Pliki i Katalogi
 
-`cd` -  zmiana katalogu w którym jesteśmy
+`cd` zmiana katalogu w którym jesteśmy
 
-`~` - katalog domowy użytkownika na którym jesteśmy zalogowani `/home/nazwa_uzytkownika`
+`~` katalog domowy użytkownika na którym jesteśmy zalogowani `/home/nazwa_uzytkownika`
 
-`.` - Aktualny katalog
+`.` Aktualny katalog
 
-`..` - katalog nadrzędny
+`..` katalog nadrzędny
 
-`/` - katalog główny
+`/` katalog główny
 
 ## Najważniejsze katalogi
 
-`/home` - domyslne miejsce przechowywania katalogow domowych
+`/home` domyslne miejsce przechowywania katalogow domowych
 
-`/dev` -  miejsce plikow urzadzen
+`/dev` miejsce plikow urzadzen
 
-`/etc` - pliki konfigruacyjne
+`/etc` pliki konfigruacyjne
 
 ## Komendy
 
-`mkdir nazwa` - tworzenie katalogow
+`mkdir nazwa` worzenie katalogow
 
-`rm nazwa` -  usuwanie katalogow i plikow
+`rm nazwa` usuwanie katalogow i plikow
 
-`cp polozenie_pliku miejsce_docelowe` - kopiowanie
+`cp polozenie_pliku miejsce_docelowe` kopiowanie
 
-`mv nazwa_pliku miejsce_docelowe` - przenoszenie plikow
+`mv nazwa_pliku miejsce_docelowe` przenoszenie plikow
 
-`mv nazwa nowa_nazwa` - zmiana nazwy
+`mv nazwa nowa_nazwa` zmiana nazwy
 
-`ln nazwa_pliku miejsce_dowiazania` - tworzenie dowiazania (domyslnie twarde dowiazanie, przelacznik `-s` aby bylo symboliczne) 
+`ln nazwa_pliku miejsce_dowiazania` tworzenie dowiazania (domyslnie twarde dowiazanie, przelacznik `-s` aby bylo symboliczne) 
 
-`ls` - wysietlanie zawartosci katalogu 
+`ls` wysietlanie zawartosci katalogu 
 
-`ls -l` - ls z wiecej informacji
+`ls -l` ls z wiecej informacji
 
-touch nazwa\_pliku tworzenie plikow
+`touch nazwa_pliku` tworzenie plikow
 
-nano nazwapliku edycja zawartosci pliku
+`nano nazwapliku` edycja zawartosci pliku
 
-chmod uprawnienia nazwapliku ustalanie praw do pliku
+`chmod uprawnienia nazwapliku` ustalanie praw do pliku
 
-Kolejność
+Kolejnosc:
 
-Właściciel\_pliku Grupa\_pliku Reszta
+Właściciel pliku | Grupa pliku | Reszta
 
 Ustalanie uprawnien 
-
-Odczyt zapis wykonanie 
-
-`     `4          2          1
+| Odczyt | Zapis | Wykonanie |
+|--------|-------|-----------|
+| 4      | 2     | 1         |
 
 Dodajemy liczby odpowiednie dla uprawnien jakie chcemy nadac np. Jak chcemy odczyt i wykonanie to 4 + 1 = 5  zapis odczyt 2 + 4 = 6
 
 I tak dla wlasciciela grupy i reszty
 
-Np.. Jak chcemy dla wlasciciela pelne prawa(odczyt zapis wykonanie) grupy odczyt i zapis a dla reszty odczyt to uzywamy komendy chmod 764 nazwa
+Np.. Jak chcemy dla wlasciciela pelne prawa(odczyt zapis wykonanie) grupy odczyt i zapis a dla reszty odczyt to uzywamy komendy `chmod 764 nazwa`
 
-Zmiana wlasciciela pliku 
+`chown nazwa_uzytkownika nazwa_pliku` zmiana wlasciciela pliku
 
-chown nazwa\_uzytkownika nazwa\_pliku
+`chgrp nazwa_grupy nazwa_pliku` zmiana grupy pliku
 
-Zmiana grupy pliku
+`chown nazwa_wlasciciela:nazwa_grupy nazwa_pliku` Zmiana wlasciciela i grupy na raz 
 
-chgrp nazwa\_grupy nazwa\_pliku
+`chown nobody:nogroup nazwa_pliku` Ustawienie na brak wlasciciela i brak grupy
 
-Zmiana wlasciciela i grupy na raz 
+## Pliki bash
 
-chown nazwa\_wlasciciela:nazwa\_grupy nazwa\_pliku
+Tworzymy plik z rozszerzeniem .sh, np: `Plik_wsadowy.sh`
 
-Ustawienie na brak wlasciciela i brak grupy
+![image](https://github.com/filipton/inf02-docs/assets/37213766/55f4db73-dde5-4d57-b936-dfe0e744f6ba)
 
-chown nobody:nogroup nazwa\_pliku
+`echo cos_do_wyswietlenia` wyswietla cos do konsoli
 
-Pliki wsadowe
+### Zmienne
+```bash
+X="jakas_zmienna"
+echo $X # wywolanie zmiennej
+read X # wprowadzanie wartosci z klawiatury do zmiennej X
+```
 
-Tworzymy plik z rozszerzeniem .sh
+### IF
+```bash
+if <warunek> ; then
+  polecenia1
+else
+  polecenia2
+fi
+```
 
-Np.. Plik\_wsadowy.sh
+Przyklad:
+```bash
+#!/bin/bash
+if [ -e ~/.bashrc ]
+then
+  echo "Masz plik .bashrc"
+else
+  echo "Nie masz pliku .bashrc"
+fi
+```
+![image](https://github.com/filipton/inf02-docs/assets/37213766/266c1337-a04d-4e1c-8e62-1f7e60eb54b9)
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.001.png)
+### For loop
+```bash
+#!/bin/bash
+for i in 1 2 3 4 5
+do
+  echo "Weclome $i times"
+done
+```
 
-Echo cos\_do\_wyswietlenia wyswietla 
+### While loop
+```bash
+while [ condition ]
+do
+  command1
+  command2
+  ...
+done
+```
 
-Zmienne
+Przyklad:
+```bash
+#!/bin/bash
+x=1
+while [ $x -le 5 ]
+do
+  echo "Welcome $x times"
+  x=$(( $x + 1 ))
+done
+```
 
-X=”jakas\_zmienna”
+## Użytkownicy Grupy Hasła
 
-Echo $X wywolanie zmiennej
+`useradd nazwa_uzytkownika` tworzy uzytkownika
 
-Read X wprowadzanie wartosci z klawiatury do zmiennej X
+`-c` komentarz
 
-IF
+`-e` YYY-MM-DD data wygasniecia konta
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.002.png)
+`-m` tworzy katalog domowy w standardowej lokalizacji
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.003.png)
+`-s` zmiana powłoki 
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.004.png)
+<br>
 
-For
+`userdel nazwa_uzytkownika` usuwa uzytkownika
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.005.png)
+`-r` usuwa katalog domowy
 
-While
+<br>
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.006.png)
+`usermod nazwa_urzytkownika` - do modyfikacji uzytkownika
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.007.png)
+`-g` grupa podstawowa
 
+`-G` usuwa wszytkie gurpy dodatkowe i ustawia podane
 
-Użytkownicy Grupy Hasła
+`-aG` dodaje gurpy dodatkowe
 
-useradd nazwa\_uzytkownika  tworzy uzytkownika
+`-e` YYY-MM-DD data wygasniecia konta
 
--c komentarz
+`-c` komentarz
 
--e YYY-MM-DD data wygasniecia konta
+`-L` blokowanie konta
 
--m tworzy katalog domowy w standardowej lokalizacji
+`-U` odlokowywanie konta
 
--s zmiana powłoki 
+`-m` przenoszenie katalogu domowego
 
-userdel nazwa\_uzytkownika  usuwa uzytkownika
+`-s` zmiana powloki 
 
--r usuwa katalog domowy
+`-u` zmiana UID
 
-usermod nazwa\_urzytkownika do modyfikacji uzytkownika
+<br>
 
--g grupa podstawowa
+`groupadd nazwa_grupy` dodawanie grupy
 
--G usuwa wszytkie gurpy dodatkowe i ustawia podane
+`groupdel nazwa_grupy` usuwanie grupy
 
--aG dodaje gurpy dodatkowe
+`groupmod nazwa_grupy` modyfikacja grupy
 
--e YYY-MM-DD data wygasniecia konta
+`passwd nazwa_uzytkownika` zmiana hasła uzytkownika
 
--c komentarz
+`chage nazwa_uzytkownika` zmiana ustawien hasla
 
--L blokowanie konta
+## Zarządzanie dyskami
 
--U odlokowywanie konta
+`fdisk` do dyskow mbr
 
--m przenoszenie katalogu domowego
+`gdisk` do dyskow gpt
 
--s zmiana powloki 
+`-l` wyswietla dyski i partycje (taki sam do `gdisk` i `fdisk`)
 
--u zmiana UID
+<br>
 
-groupadd nazwa\_grupy dodawanie grupy
+`fdisk nazwa_urzadzenia` odpala konfiguracje wskazanego uzadzenia
 
-groupdel nazwa\_grupy usuwanie grupy
+## Tar
 
-groupmod nazwa\_grupy modyfikacja grupy
+`tar nazwa_archiwum pliki_do_archiwizacji`
 
-passwd nazwa\_uzytkownika zmiana hasła uzytkownika
+`-c` tworzenie archiwum
 
-chage nazwa\_uzytkownika zmiana ustawien hasla
+`-v` wypisuje co robi
 
-Zarządzanie dyskami
+`-f` sciezka do archiwum
 
-fdisk do dyskow mbr
+`-z` kompresowanie gzip
 
-gdisk do dyskow gpt
+`-j` kompresowanie bzip2
 
-Takie  same podstawowe przelaczniki
+`-C` zmienia katalog w którym domyslnie pracuje tar
 
--l wyswietla dyski i partycje
+`-x` wypakowywanie archiwum 
 
-fdisk nazwa\_urzadzenia odpala konfiguracje wskazanego uzadzenia
+`-t` wyswietla zawartosc archiwum
 
-Tar
+`-r` dolaczanie do archiwum
 
-Tar nazwa\_archiwum pliki\_do\_archiwizacji
+`-u` uaktualnanie archiwum
 
--c tworzenie archiwum
-
--v wypisuje co robi
-
--f sciezka do archiwum
-
--z kompresowanie gzip
-
--j kompresowanie bzip2
-
--C zmienia katalog w którym domyslnie pracuje tar
-
--x wypakowywanie archiwum 
-
--t wyswietla zawartosc archiwum
-
--r dolaczanie do archiwum
-
--u uaktualnanie archiwum
-
-Konfiguracja sieci z pliku (netplan)
+## Konfiguracja sieci z pliku (netplan)
 
 Sprawdzanie nazw i konfiguracji kart sieciowych 
 
-Ip a
+`ip a`
 
 Plik konfiguracyjny
 
 /etc/netplan/\*.yaml
 
-Przykładowa konfiguracja
+### Przykładowa konfiguracja
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.008.png)
+![image](https://github.com/filipton/inf02-docs/assets/37213766/df128674-159c-4091-8899-875353e0c311)
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.009.png)
+![image](https://github.com/filipton/inf02-docs/assets/37213766/7d8d7077-c2c6-4e2c-a1de-0f60241eabde)
 
-![](Aspose.Words.d1642233-c50d-4460-8554-42d738192727.010.png)
+![image](https://github.com/filipton/inf02-docs/assets/37213766/68aa2b99-5916-4d52-81cc-bc7b1688d693)
 
-Po konfiguracji trzeba wpisac komende
-
-sudo netplan apply
+**Po konfiguracji trzeba wpisac komende** `sudo netplan apply`
 
 
-Net-tools
+## Net-tools
 
-qrp do sprawdzania adresow mac i ip
+`qrp` do sprawdzania adresow mac i ip
 
-ifconfig wyswietla konfigruacje interfejsu (między innymi ip)
+`ifconfig` wyswietla konfigruacje interfejsu (między innymi ip)
 
-ipmaddr wyswietla mac
+`ipmaddr` wyswietla mac
 
-iptunnel 
+`iptunnel` 
 
-route pokazuje trasy routingu
+`route` pokazuje trasy routingu
 
-nameif 
+`nameif` 
 
-mii-tool 
+`mii-tool` 
 
 
-Lynx 
+## Lynx 
 
 Do przeglądania stron internetowych
 
-lynx adres\_strony
+`lynx adres_strony`
 
-DIagnostyka
+## Diagnostyka
 
-lshw wyswietla informacje o calych hardwere 
+`lshw` wyswietla informacje o calych hardwere 
 
-lshw | more wyswietla lshw z podzialem na czesci
+`lshw | more` wyswietla lshw z podzialem na czesci
 
-uname wyswietla informacje o systemie
+`uname` wyswietla informacje o systemie
 
-cat /etc/\*-release wyswietla dokladniejsze informacje o systemie 
+`cat /etc/*-release` wyswietla dokladniejsze informacje o systemie 
