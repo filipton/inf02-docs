@@ -1,3 +1,8 @@
-# Main page for INF02 DOCS
+# Poradniki
 
-[a relative link](Mikrotik-basic-setup.md)
+## Mikortiki
+**TODO**
+
+## Linux
+ - [Ogolne informacje](Linux.md)
+ - [SSH](Linux-SSH.md)
