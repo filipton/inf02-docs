@@ -107,7 +107,7 @@ else
   echo "Nie masz pliku .bashrc"
 fi
 ```
-![image](https://github.com/filipton/inf02-docs/assets/37213766/663bb4af-e3aa-4b73-a2ed-a014139be44c)
+![image](/images/bash_operators.png)
 
 ### For loop
 ```bash
@@ -241,9 +241,9 @@ Plik konfiguracyjny
 
 ### Przykładowa konfiguracja
 
-![](https://github.com/filipton/inf02-docs/assets/37213766/221551c1-6668-47d4-a1c0-e9aee7a0a4c9)
-![](https://github.com/filipton/inf02-docs/assets/37213766/f2dbe1b1-f96e-4fda-949b-61bf98f8c48d)
-![](https://github.com/filipton/inf02-docs/assets/37213766/6db2aecc-61f9-4a18-ba5e-1ccd574a9951)
+![](/images/netplan_ex_1.png)
+![](/images/netplan_ex_2.png)
+![](/images/netplan_ex_3.png)
 
 **Po konfiguracji trzeba wpisac komende** `sudo netplan apply`
 

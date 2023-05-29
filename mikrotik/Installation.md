@@ -1,8 +1,8 @@
 # Instalacja mikrotik na Virtualbox/VMware
 
-Jezeli chcemy porobic mikortiki w domu mozemy je wirtualizowac. Plik .ova mozemy pobrac [tutaj](https://mikrotik.com/download) - szukamy na dole `Cloud Hosted Router` i pobieramy `OVA template`.
+Jezeli chcemy porobic mikortiki w domu mozemy je wirtualizowac. Plik .ova mozemy pobrac [tutaj](https://mikrotik.com/download) - szukamy na dole `Cloud Hosted Router` i pobieramy `OVA template`. (Najlepiej najnowsza)
 
-Ja polecam wersje [7.10rc1](https://download.mikrotik.com/routeros/7.10rc1/chr-7.10rc1.ova) bo inne mi nie dzialaja najlepiej.
+**Do zarzadzania mikrotikiem wykorzystujemy program [WinBox](https://mt.lv/winbox64)**.
 
 ## Uwagi
  - Jezeli chcemy miec wiecej niz 4 interfejsy (czyli tak jak na virtualbox) najlepiej poprostu pobrac `vmware` ktory nam pozwoli dodac wiecej interfejsow. 

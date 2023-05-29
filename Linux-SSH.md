@@ -24,7 +24,7 @@ sudo systemctl restart ssh
 sudo systemctl status ssh
 ```
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/affb8dee-90fc-489c-a500-bcb2d9a900aa)
+![image](/images/systemctl_status_ssh.png)
 
 Patrzycie tylko czy wyświetla active (running) na zielono jeśli tak to działa nie patrzycie na nic innego.
 
@@ -61,11 +61,11 @@ Otwieramy plik konfiguracyjny `sudo nano /etc/ssh/sshd_config`
 
 Szukamy takiej linijki
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/c85abac3-7148-4505-b8c1-0524931b96b3)
+![image](/images/sshd_config_find_permitrootlogin.png)
 
 Przy `PermitRootLogin` usuwamy `#` i w miejsce `prohibit-password` wpisujemy `yes`
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/6318f6ab-8a73-47db-8cf9-89819f6fd862)
+![image](/images/sshd_config_permirootlogin_yes.png)
 
 Na samym koncu [restartujemy](#restartowanie-ssh) i sprawdzamy czy nam wszystko dziala.
 W tym momencie mozemy sprobowac [zalogowac sie](#logowanie-do-ssh-z-innego-komputera) na konto `root`.
@@ -91,7 +91,7 @@ Otwieramy plik konfiguracyjny `sudo nano /etc/ssh/sshd_config`
 
 Szukamy i modifikujemy odpowiednie linijki (wiadomo usuwamy `#` jezeli sa przed opcja)
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/e5ab0a16-ad71-49b6-a000-5e20cdd27a8a)
+![image](/images/sshd_config_find_permitrootlogin.png)
 
 `MaxAuthTries` maxymalna ilosc prob wpisania hasla (zmieniamy z 6 na ile chcemy)
 `MaxSessions` maxymalna ilosc sesji (zmieniamy z 10 na ile chcemy)
@@ -101,7 +101,7 @@ Na samym koncu [restartujemy](#restartowanie-ssh) i sprawdzamy czy nam wszystko 
 ## Włączanie i wyłączanie uwierzytelniania hasłem
 Otwieramy plik konfiguracyjny `sudo nano /etc/ssh/sshd_config`
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/5c0d3127-cc6a-4165-be30-af2c9b689e90)
+![image](/images/sshd_config_password_auth.png)
 
 Szukamy `PasswordAuthentication` i usuwamy `#` jezeli on tam jest, jak chcemy wlaczyc autoryzajce haslem zostawiamy `yes` a jeśli
 chcemy wylaczyc to zmieniamy na `no`
@@ -116,7 +116,7 @@ na windowsie)
 ssh-keygen -t rsa
 ```
 
-![image](https://github.com/filipton/inf02-docs/assets/37213766/c6c230b1-c51b-4eb9-abcb-1e7b8825d050)
+![image](/images/ssh_generate_key.png)
 
 Przeysłamy klucz ssh na serwer. Scieżka do pliku z kluczem jest podana przy tworzeniu klucza
 
