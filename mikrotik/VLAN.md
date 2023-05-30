@@ -17,8 +17,18 @@
   - ![](/images/vlan_add_port_def.png)
 - Nastepnie wchodzimy w podzakladke `Ports` (nadal w zakladce `Bridge`)
 - Dodajemy tam (lub modyfikujemy) porty ktore wczesniej wpisalismy w `Tagged` i `Untagged` **TAK TRUNKI TEZ**
-  - `Interface` - dajemy dany port
-  - `Bridge` - nasz bridge
+  - W podzakladce `VLAN` - ID vlanu na naszym porcie (jezeli jest to trunk to zostawiamy ID 1 - to nie ma znaczenia i tak chyba XD)
+  - ![](/images/vlan_bridge_port_vlan_tab.png)
+
+## Wlaczanie VLAN'ow
+- W zakladce `Bridge` i podzakladze `Bridge` edytujemy naszego bridge'a
+- Wchodzimy w podzakladke `VLAN` i wlaczamy `VLAN Filtering`
+- ![](/images/vlan_bridge_vlan_filtering.png)
+
+## InterVlan Routing
+[**TA SEKCJA MA OSOBNA STRONE**](/mikrotik/InterVlanRouting.md)
 
 ## Uwagi
+- Domyslnie vlany o osobnych adresach sieci moga sie z soba komunikowac: Patrz na [`InterVlan Routing`](/mikrotik/InterVlanRouting.md)
 - Jezeli mamy vlan'y to musimy miec osobne DHCP server'y, DHCP server na bridge nie bedzie juz nam przydzielal adresow
+- Jezeli konfigurujemy naszego mikrotika z urzadzenia podlaczonego pod VLAN'a to po wlaczeniu VLAN Filteringu wyrzuci nas z WinBoxa lecz powinnismy miec nadal do niego dostep po reconnect

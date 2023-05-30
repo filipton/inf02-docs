@@ -5,11 +5,11 @@ Z tego miejsca mozemy dodawac nowe adresy ip - pamietaj ze dodajesz **adres mikr
 
 ![](/images/addressess_new.png)
 
-`Address` - **adres IP mikrotika** z maska po "/"
-`Network` - adres sieci, po klikneicu Apply sam sie uzupelni
-`Interface` - interfejs na ktorym na byc ten adres
+- `Address` - **adres IP mikrotika** z maska po "/"
+- `Network` - adres sieci, po klikneicu Apply sam sie uzupelni
+- `Interface` - interfejs na ktorym na byc ten adres
 
-**Jezeli w arkuszu bylo by napisane zeby nadac adres IP dla interfejsu powiazanego z VLAN X to wybieramy W `Interface` VLAN'a!**
+**Jezeli w arkuszu bylo by napisane zeby nadac adres IP dla interfejsu powiazanego z VLAN X to wybieramy W `Interface` VLAN'a!** NP: `vlan100` etc.
 
 ## Uwagi
  - Jezeli inaczej konfigurujesz VLAN'y (tzn, ze dajesz VLAN'y nie do bridge tylko na interfejs - ja tak nie pokazuje) to ostatnie pogrobione zdanie sie ciebie nie aplikuje.

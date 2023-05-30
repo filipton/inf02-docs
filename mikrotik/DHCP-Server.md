@@ -18,5 +18,12 @@ Przed konfiguracja nalezy skonfigurowac [bridge](/mikrotik/Bridge.md).
 - W okienku ktore nam sie utworzylo mozemy zmodyfikowac zakresy ip, dns etc.
 - ![](/images/dhcp_server_modify_networks.png)
 
+## Konfiguracja DHCP dla kilku VLANow
+Jezeli chcemy miec ta sama adresacje DHCP'kow dla kilku roznych vlanow poprostu ustawiamy te same adresy ip dla tych vlanow.
+
+Potem tak jak wczesniej poprostu konfigurujemy na tych vlanach DHCP server.
+
+![](/images/dhcp_multiple_vlans.png)
+
 ## Uwagi
 - Przy konfiguracji DHCP server'a na VLAN'ie w interfejsach wybieramy naszego VLAN'a
