@@ -5,7 +5,7 @@ Z tego miejsca mozemy dodawac nowe adresy ip - pamietaj ze dodajesz **adres mikr
 
 ![](/images/addressess_new.png)
 
-- `Address` - **adres IP mikrotika** z maska po "/"
+- `Address` - **adres IP mikrotika na danym interfejsie** z maska po "/"
 - `Network` - adres sieci, po klikneicu Apply sam sie uzupelni
 - `Interface` - interfejs na ktorym na byc ten adres
 
