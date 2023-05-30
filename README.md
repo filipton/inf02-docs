@@ -7,6 +7,8 @@
  - [Bridge](/mikrotik/Bridge.md)
  - [NAT](/mikrotik/NAT.md)
  - [Przekierowanie](/mikrotik/Redirections.md)
+ - [DHCP Server](/mikrotik/DHCP-Server.md)
+ - [VLAN'y](/mikrotik/VLAN.md)
 
 ## Linux (Autor: Wiktor)
  - [Ogolne informacje](/Linux.md)
