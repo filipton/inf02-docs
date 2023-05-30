@@ -11,7 +11,7 @@
  - [DHCP Server](/mikrotik/DHCP-Server.md)
  - [VLAN'y](/mikrotik/VLAN.md)
  - [InterVlan Routing](/mikrotik/InterVlanRouting.md)
- - [Routing](/mikrotik/Routing.md)
+ - [Routing - Trasa Statyczna](/mikrotik/Routing.md)
 
 ## Linux (Autor: Wiktor)
  - [Ogolne informacje](/Linux.md)

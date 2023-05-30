@@ -1,4 +1,4 @@
-# Routing
+# Routing - Trasa Statyczna
 Jezeli w arkuszu mamy podane ustawienie routingu (statycznego) dla danej sieci i dla danego adresu bramu to musimy skonfigurowac to w taki sposob.
 
 - Wchodzimy w zakladke `IP > Routes`
@@ -9,3 +9,8 @@ Jezeli w arkuszu mamy podane ustawienie routingu (statycznego) dla danej sieci i
 
 ## Co oznacza ta konfiguracja?
 Jezeli w `Dst. Address` mamy `192.168.1.0/24` a w `Gateway` mamy `192.168.0.10` oznacza to ze chcac sie laczyc do sieci wskazanej powyzej laczymy sie poprzez adres bramy `192.168.0.10`.
+
+## Przyklad z polecenia
+```
+ustawiona trasa statyczna dla podsieci 192.168.1.0/24 z dostępem przez bramę 192.168.0.15
+```
