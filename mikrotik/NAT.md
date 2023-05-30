@@ -14,16 +14,16 @@ Jezeli nie chcemy uzywac opcji Quick Set to mozemy recznie dodac regule firewall
 - [Tworzymy bridge](/mikrotik/Bridge.md) jezeli nie mamy i przypisujemy do niego **TYLKO** porty LAN
 
 - Wchodzimy w zakladke `IP > Firewall` i w "kartach" szukamy `NAT`
-![](/images/nat_firewall_bm.png)
+- ![](/images/nat_firewall_bm.png)
 
 - Dodajemy tutaj "+" nowa regule
 
 - W okienku i zakladce `General`
   - `Chain` - srcnat
   - `Out. Interface` - tutaj dajemy nasz port **WAN**
-  ![](/images/nat_new_rule_general.png)
+  - ![](/images/nat_new_rule_general.png)
 
 - W zakladce `Action` ustawiamy `masquerade`
-![](/images/nat_new_rule_action.png)
+- ![](/images/nat_new_rule_action.png)
 
 - Klikamy `Apply`
