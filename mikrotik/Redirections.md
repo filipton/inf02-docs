@@ -20,7 +20,7 @@ Robimy przekierowanie zeby bedac polaczanym z portem WAN mikrotika miec dostep n
 - Dodajemy nowa regule i ustawiamy:
   - `Chain` - dstnat
   - `Protocol` - jaki chcemy (pewnie bedzie to TCP)
-  - `Dst. Address` - adres WAN **nie trzeba ale warto**
+  - `In. Interface` - port WAN **WAZNE**
   - `Dst. Port` - port na mikrotiku (na WAN'ie)
   - W podzakladce `Action` zmieniamy `Action` na `dst-nat`
     - Ustawiamy `To Addresses` oraz `To Ports` na adres i port serwera w sieci **LAN**
