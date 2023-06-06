@@ -1,0 +1,7 @@
+# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
+
+## Lynx 
+
+Do przeglądania stron internetowych
+
+`lynx adres_strony`
