@@ -1,6 +1,4 @@
-# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
-
-## Pliki i Katalogi
+# Pliki i Katalogi
 
 `cd` zmiana katalogu w którym jesteśmy
 

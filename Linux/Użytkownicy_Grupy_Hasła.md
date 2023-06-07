@@ -1,5 +1,4 @@
-# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
-## Użytkownicy Grupy Hasła
+# Użytkownicy Grupy Hasła
 
 `useradd nazwa_uzytkownika` tworzy uzytkownika
 

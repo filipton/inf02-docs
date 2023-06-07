@@ -14,6 +14,8 @@
  - [Routing - Trasa Statyczna](/mikrotik/Routing.md)
 
 ## Linux (Autor: Wiktor)
+**PAMIETAJ**: PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC `man polecenie` lub `polecenie --help`
+
  - [Diagnostyka](/Linux/Diagnostyka.md)
  - [Netplan](/Linux/Konfiguracja_sieci_z_pliku_(netplan).md)
  - [Lynx](/Linux/Lynx.md)

@@ -1,6 +1,4 @@
-# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
-
-## Tar
+# Tar
 
 `tar nazwa_archiwum pliki_do_archiwizacji`
 

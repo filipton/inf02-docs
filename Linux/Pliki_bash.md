@@ -1,5 +1,4 @@
-# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
-## Pliki bash
+# Pliki bash
 
 Tworzymy plik z rozszerzeniem .sh, np: `Plik_wsadowy.sh`
 
@@ -13,14 +12,14 @@ tutaj
 
 `echo cos_do_wyswietlenia` wyswietla cos do konsoli
 
-### Zmienne
+## Zmienne
 ```bash
 X="jakas_zmienna"
 echo $X # wywolanie zmiennej
 read X # wprowadzanie wartosci z klawiatury do zmiennej X
 ```
 
-### IF
+## IF
 ```bash
 if <warunek> ; then
   polecenia1
@@ -41,7 +40,7 @@ fi
 ```
 ![image](/images/bash_operators.png)
 
-### For loop
+## For loop
 ```bash
 #!/bin/bash
 for i in 1 2 3 4 5
@@ -50,7 +49,7 @@ do
 done
 ```
 
-### While loop
+## While loop
 ```bash
 while [ condition ]
 do

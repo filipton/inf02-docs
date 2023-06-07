@@ -1,5 +1,4 @@
-# PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC MAN POLECENIE - WSZYSTKIE PRZELACZNIKI SA W MAN NIE TRZEBA ICH PAMIETAC
-## Net-tools
+# Net-tools
 
 `qrp` do sprawdzania adresow mac i ip
 
