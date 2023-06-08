@@ -11,7 +11,8 @@
  - [DHCP Server](/mikrotik/DHCP-Server.md)
  - [VLAN'y](/mikrotik/VLAN.md)
  - [InterVlan Routing](/mikrotik/InterVlanRouting.md)
- - [Routing - Trasa Statyczna](/mikrotik/Routing.md)
+ - [Routing - Trasa Statyczna / Brama domyslna](/mikrotik/Routing.md)
+ - [DNS (ustawienie DNS na WAN)](/mikrotik/DNS.md)
 
 ## Linux (Autor: Wiktor)
 **PAMIETAJ**: PRZEŁĄCZNIKI DO KOMEND SZUKAMY WPISUJĄC `man polecenie` lub `polecenie --help`
