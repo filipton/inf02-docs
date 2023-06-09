@@ -6,4 +6,4 @@ Jezeli chcemy ustawic serwer DNS dla naszego mikrotika (w arkuszach jest napisan
 - Naciskamy `Apply`
 
 ## Czy to napewno tak dziala?
-Jezeli zrobimy konfiguracje DNS (Quicksetem)[/mikrotik/QuickSet.md] to konfiguracja bedzie wlasnie tak wygladala
+Jezeli zrobimy konfiguracje DNS [Quicksetem](/mikrotik/QuickSet.md) to konfiguracja bedzie wlasnie tak wygladala
