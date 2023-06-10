@@ -9,6 +9,7 @@
  - [NAT](/mikrotik/NAT.md)
  - [Przekierowanie](/mikrotik/Redirections.md)
  - [DHCP Server](/mikrotik/DHCP-Server.md)
+ - [DHCP Client (dla portu np)](/mikrotik/DHCP-Client.md)
  - [VLAN'y](/mikrotik/VLAN.md)
  - [InterVlan Routing](/mikrotik/InterVlanRouting.md)
  - [Routing - Trasa Statyczna / Brama domyslna](/mikrotik/Routing.md)
